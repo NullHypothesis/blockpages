@@ -6,6 +6,9 @@ directories represent 2-letter country codes.  The second-level directories
 represent the IP addresses of the web servers hosting the block pages.  Inside
 these directories, the actual pages are stored.
 
+Another great source for block pages is available at
+<https://github.com/citizenlab/blockpages>.
+
 Contact
 =======
 Contact: Philipp Winter <phw@nymity.ch>  
