@@ -1,0 +1,26 @@
+body {
+	width: 100%;
+	font-family: arial;
+	font-size: 1em;
+	background-color: #e2e2e2;
+	margin: 0;
+	padding: 0;
+}
+
+.content-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15%;
+	width: 60%;
+}
+
+.content-wrapper .image-wrapper {
+	text-align: center;
+}
+.content-wrapper .image-wrapper .image {
+	margin: auto;
+	width: 45%;
+}
+.content-wrapper .message {
+	margin-top: 5%;
+}
