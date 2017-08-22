@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+*{ padding:0px; margin:0px; list-style:none; outline:none; }
+body , html{ color:#585858; font-family: 'tondo_corpregular';}
+img,a { border:none; outline:none; text-decoration:none;}
+ul,li,ol { list-style-type:none;}
+.clearfix:after { content: "."; display: block; font-size:0; height: 0; clear: both; visibility: hidden;}
+.clearfix { display: block; }
+button , input[type="button"], input[type="button"]{ appearance: none; -webkit-appearance: none; cursor:pointer;}
+h1,h2,h3,h4,h5,h6,b,strong{ font-weight:normal; font-family: 'tondo_corpbold';}
+
+
+.container{ width:1002px; margin:0 auto; }
+.msgBox{ font-family: 'tondo_corpbold'; font-size:14px; padding-top:15px; }
+
+
+
+.advert_strip{ width:400px; padding-left:60px; padding: 15px 0 15px 50px; background:url('../images/redBg.jpg'); position:fixed; bottom:5px; margin-left:-225px; left:50%; color:#fff; font-size:12px; border-radius:3px; cursor:pointer;}
+.adblink{ position:absolute; top:-18px; left:0; width:22px; padding:1px 0; display:block; text-align:center; background-color:#ffc000; border-radius:3px; }
+.imgIcon{ position:absolute; top:15px; left:7px;}
+.Mhead{ font-size:15px; font-family: 'tondo_corpbold';}
+.descMs{ margin-bottom:5px; padding-right:5px;}
+.lnkOut span{ color:#fff; padding:0 5px; border-left:1px solid #fff; position: relative; top: 3px;}
+.lnkOut span:first-child{ border-left:0 none; padding-left:0;}
+.lnkOut button{ float:right; width:65px; height:22px; border:0 none; margin-right:5px; font-size:12px; color:#000; background-color:#fff; font-family: 'tondo_corpregular'; border-radius:3px;}
+
+
+#wynkMvs{ display:none;}
+
+
+
+
+
+
+@media screen and (max-width:1002px){
+.container{ width:90%;}
+}
+@media screen and (max-width:480px){ 
+.advert_strip { width: 360px; margin-left:-205px;}
+}
+@media screen and (max-width:420px){ 
+.advert_strip { width: 300px; margin-left:-175px;}
+
+.Mhead{ font-size:13px;}
+}
+@media screen and (max-width:360px){ 
+.advert_strip { width: 260px; margin-left:-155px;}
+}
