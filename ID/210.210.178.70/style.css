@@ -1,0 +1,223 @@
+@font-face {
+   font-family: 'bariol_light';
+   src: url(http://210.210.178.70/fonts/bariol_light-webfont.woff2) format('woff2'),
+      url(http://210.210.178.70/fonts/bariol_light-webfont.woff) format('woff');
+   font-weight: 200;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'bariol_reg';
+   src: url(http://210.210.178.70/fonts/bariol_regular-webfont.woff2) format('woff2'),
+      url(http://210.210.178.70/fonts/bariol_regular-webfont.woff) format('woff');
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'bariol_bold';
+   src: url(http://210.210.178.70/fonts/bariol_bold-webfont.woff2) format('woff2'),
+      url(http://210.210.178.70/fonts/bariol_bold-webfont.woff) format('woff');
+   font-weight: 700;
+   font-style: normal;
+}
+
+body {
+   background: white;
+   color: black;
+   font-family: 'bariol_reg', 'Open Sans', Arial, sans-serif;
+   font-size: 100%;
+   color: #767676;
+}
+
+h1 {
+   color: #335cd1;
+   font-size: 2.925em;
+   line-height: 1.076em;
+   margin-top: 0;
+}
+
+h3 a {
+   color: #333;
+   display: inline-block;
+   text-decoration: none;
+}
+
+h3 a:hover {
+   color: #333;
+   display: inline-block;
+   text-decoration: underline;
+}
+
+p {
+   font-size: 1.15em;
+   line-height: 1.5em;
+}
+
+.spacer {
+   background: #335cd1;
+   width: 14px;
+   height: 4px;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   border-radius: 2px;
+   margin: 2em 0;
+}
+
+.container {
+   width: 1070px;
+   padding: 30px 15px;
+   margin: 0 auto;
+   box-sizing: border-box;
+}
+
+.row {
+   margin-left: -15px;
+   margin-right: -15px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 30px;
+   box-sizing: border-box;
+}
+
+.col {
+   width: 100%;
+   padding: 0 15px;
+   box-sizing: border-box;
+}
+
+.col-sm-6 {
+   width: 50%;
+}
+
+.col-md-5 {
+   width: 41.667%;
+}
+
+.col-md-7 {
+   width: 58.333%;
+}
+
+.meta-info {
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: flex-end;
+   align-items: center;
+   margin: 0;
+   padding: 0;
+}
+
+.meta-info li {
+   padding-left: 19px;
+   margin-left: 15px;
+   position: relative;
+}
+
+.meta-info li:after {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 5px;
+   width: 4px;
+   height: 14px;
+   background: #335cd1;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   border-radius: 2px;
+}
+
+.meta-info li:first-child {
+   margin: 0;
+   padding: 0;
+}
+
+.meta-info li:first-child:after {
+   position: static;
+   background: none;
+}
+
+.meta-info a {
+   display: block;
+   height: 24px;
+   display: flex;
+   text-decoration: none;
+   color: #335cd1;
+   font-family: 'bariol_bold', 'Open Sans', Arial, sans-serif;
+   font-size: 1.25em;
+}
+
+.meta-info a img {
+   display: inline-block;
+   margin-right: 5px;
+}
+
+@media screen and (max-width: 1199px) {
+   .container {
+      width: 970px;
+   }
+
+   img {
+      max-width: 100%;
+   }
+}
+
+@media screen and (max-width: 991px) {
+   .container {
+      width: 750px;
+   }
+
+   .col,
+   .col-sm-6,
+   .col-md-5,
+   .col-md-7 {
+      width: 100%;
+   }
+
+   h1 {
+      text-align: center;
+   }
+
+   img {
+      margin: 15px auto;
+      display: block;
+   }
+
+   .meta-info {
+      justify-content: center;
+   }
+
+   .meta-info a img {
+      display: inline-block;
+      margin: 0;
+      margin-right: 5px;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .container {
+      width: 100%;
+   }
+
+   h1 {
+      font-size: 2em;
+      line-height: 1.3em;
+   }
+
+   .img-feature {
+      width: 80%;
+   }
+
+   h3,
+   p {
+      font-size: 1em;
+   }
+
+   .meta-info a {
+      font-size: 1em;
+   }
+}
